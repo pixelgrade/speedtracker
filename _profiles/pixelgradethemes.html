@@ -58,10 +58,14 @@ budgets:
     alerts: ["slackAlert"]
   -
     metric: loadTime
-    max: 6000
+    max: 7000
     alerts: ["slackAlert"]
   -
     metric: fullyLoaded
     max: 9000
+    alerts: ['emailAlert', 'slackAlert']
+  -
+    metric: pagespeed
+    min: 60
     alerts: ['emailAlert', 'slackAlert']
 ---
